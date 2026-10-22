@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Share Your Story | Marissa's Voice</title>
+  <style>
+    body { font-family: 'Open Sans', sans-serif; background: linear-gradient(to bottom, #f0e6ff, #ffffff); color: #333; margin: 0; padding: 20px; line-height: 1.6; }
+    .container { max-width: 700px; margin: 0 auto; }
+    h1 { color: #461078; font-family: 'Playfair Display', serif; text-align: center; }
+    form { background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+    label { display: block; margin: 15px 0 5px; font-weight: bold; }
+    input, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+    button { background: #461078; color: white; padding: 12px 24px; border: none; border-radius: 5px; cursor: pointer; margin-top: 15px; }
+    nav a { color: #461078; margin: 0 10px; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="/">Home</a>
+      <a href="/poetry.html">Poetry</a>
+      <a href="/biography.html">Biography</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/share.html">Share Your Story</a>
+    </nav>
+    <h1>Share Your Story</h1>
+    <p>If Marissa’s story or the work of Marissa’s Voice has touched you, you are welcome to share your own experience. Stories help others feel less alone and strengthen our prevention work.</p>
+    <form name="share-story" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="share-story" />
+      <p class="hidden" style="display:none;">
+        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+      </p>
+      <label for="name">Name (optional)</label>
+      <input type="text" name="name" id="name" />
+      <label for="email">Email (optional — only if you want a reply)</label>
+      <input type="email" name="email" id="email" />
+      <label for="story">Your Story</label>
+      <textarea name="story" id="story" rows="8" required></textarea>
+      <label>
+        <input type="checkbox" name="consent" required /> I understand this story may be shared publicly (with or without my name) to support prevention efforts.
+      </label>
+      <button type="submit">Submit Story</button>
+    </form>
+    <p style="margin-top:20px; font-size:0.9em;">Submissions are reviewed with care. Thank you for trusting us with your story.</p>
+  </div>
+</body>
+</html>
