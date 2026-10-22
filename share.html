@@ -11,6 +11,7 @@
     form { background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
     label { display: block; margin: 15px 0 5px; font-weight: bold; }
     input, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+    .consent { margin: 15px 0; font-weight: normal; }
     button { background: #461078; color: white; padding: 12px 24px; border: none; border-radius: 5px; cursor: pointer; margin-top: 15px; }
     nav a { color: #461078; margin: 0 10px; text-decoration: none; }
   </style>
@@ -23,6 +24,7 @@
       <a href="/biography.html">Biography</a>
       <a href="/blog.html">Blog</a>
       <a href="/share.html">Share Your Story</a>
+      <a href="/contact.html">Contact</a>
     </nav>
     <h1>Share Your Story</h1>
     <p>If Marissa’s story or the work of Marissa’s Voice has touched you, you are welcome to share your own experience. Stories help others feel less alone and strengthen our prevention work.</p>
@@ -37,8 +39,8 @@
       <input type="email" name="email" id="email" />
       <label for="story">Your Story</label>
       <textarea name="story" id="story" rows="8" required></textarea>
-      <label>
-        <input type="checkbox" name="consent" required /> I understand this story may be shared publicly (with or without my name) to support prevention efforts.
+      <label class="consent">
+        <input type="checkbox" name="privacy-consent" required /> I understand and consent that this story may be reviewed and potentially shared publicly (with or without my name) by Marissa’s Voice Inc. to support prevention efforts. I can request that my story remain private.
       </label>
       <button type="submit">Submit Story</button>
     </form>
